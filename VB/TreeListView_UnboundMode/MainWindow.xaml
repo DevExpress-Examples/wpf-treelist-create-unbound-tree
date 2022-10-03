@@ -5,28 +5,26 @@
         xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
         xmlns:local="clr-namespace:TreeListView_UnboundMode">
     <Grid>
-        <dxg:GridControl Name="grid">
-            <dxg:GridControl.Columns>
-                <dxg:GridColumn FieldName="Name" />
-                <dxg:GridColumn FieldName="Executor" />
-                <dxg:GridColumn FieldName="State" />
-            </dxg:GridControl.Columns>
+        <dxg:GridControl>
+            <dxg:GridColumn FieldName="Name"/>
+            <dxg:GridColumn FieldName="Executor"/>
+            <dxg:GridColumn FieldName="State"/>
             <dxg:GridControl.View>
-                <dxg:TreeListView Name="treeListView1" AutoWidth="True">
+                <dxg:TreeListView x:Name="view" AutoWidth="True" AutoExpandAllNodes="True">
                     <dxg:TreeListView.Nodes>
                         <dxg:TreeListNode>
                             <dxg:TreeListNode.Content>
-                                <local:ProjectObject Name="Project: Betaron" Executor="Destiny Tabisola" />
+                                <local:ProjectObject Name="Project: Betaron" Executor="Destiny Tabisola"/>
                             </dxg:TreeListNode.Content>
                             <dxg:TreeListNode.Nodes>
                                 <dxg:TreeListNode>
                                     <dxg:TreeListNode.Content>
-                                        <local:StageObject Name="Development" Executor="Kairra Hogg" />
+                                        <local:StageObject Name="Development" Executor="Kairra Hogg"/>
                                     </dxg:TreeListNode.Content>
                                     <dxg:TreeListNode.Nodes>
                                         <dxg:TreeListNode>
                                             <dxg:TreeListNode.Content>
-                                                <local:TaskObject Name="Coding" Executor="Sabato Durley" State="Not Started" />
+                                                <local:TaskObject Name="Coding" Executor="Sabato Durley" State="Not Started"/>
                                             </dxg:TreeListNode.Content>
                                         </dxg:TreeListNode>
                                     </dxg:TreeListNode.Nodes>
