@@ -1,16 +1,11 @@
-﻿using System;
-using System.Windows;
+﻿using System.Windows;
 using DevExpress.Xpf.Grid;
 
 namespace TreeListView_UnboundMode {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window {
         public MainWindow() {
             InitializeComponent();
-            BuildTree();
-            treeListView1.ExpandAllNodes();
+            //BuildTree();
         }
 
         private void BuildTree() {
@@ -21,7 +16,7 @@ namespace TreeListView_UnboundMode {
 
         private TreeListNode CreateRootNode(object dataObject) {
             TreeListNode rootNode = new TreeListNode(dataObject);
-            treeListView1.Nodes.Add(rootNode);
+            view.Nodes.Add(rootNode);
             return rootNode;
         }
 
@@ -32,19 +27,14 @@ namespace TreeListView_UnboundMode {
         }
     }
 
-    public class StageObject {
-        public String Name { get; set; }
-        public string Executor { get; set; }
-    }
-
     public class ProjectObject {
-        public String Name { get; set; }
+        public string Name { get; set; }
         public string Executor { get; set; }
     }
 
-    public class TaskObject {
-        public String Name { get; set; }
-        public string Executor { get; set; }
+    public class StageObject : ProjectObject { }
+
+    public class TaskObject : ProjectObject {
         public string State { get; set; }
     }
 }
