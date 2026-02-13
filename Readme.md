@@ -27,7 +27,7 @@ This example creates a [TreeListView](https://docs.devexpress.com/WPF/DevExpress
 * [WPF Tree List - Use the Child Nodes Selector to Display Hierarchical Data](https://github.com/DevExpress-Examples/wpf-treelist-use-child-nodes-selector-to-display-hierarchical-data)
 * [WPF Data Grid - Create Unbound Columns](https://github.com/DevExpress-Examples/how-to-create-unbound-columns-e1503)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-treelist-create-unbound-tree&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-treelist-create-unbound-tree&~~~was_helpful=no)
 
